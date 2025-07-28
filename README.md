@@ -16,15 +16,6 @@ A clean, responsive personal portfolio website built using HTML and JavaScript. 
 - **Interactivity:** Vanilla JavaScript
 - **Deployment:** GitHub Pages or any static hosting provider
 
-## 🛠️ Setup & Usage
-
-```bash
-# Clone the repository
-git clone https://github.com/singh04ayush/My-Profile.git
-
-# Open index.html in your browser to view the site
-```
-
 ## 📝 License
 
 MIT License
