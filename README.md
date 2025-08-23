@@ -7,7 +7,6 @@ A clean, responsive personal portfolio website built using HTML and JavaScript. 
 - 🧭 Responsive navigation bar (optimized for large screens)
 - 🌙 Dark mode toggle for better UX
 - 📬 Contact form with submission functionality
-- 📸 Image assets for branding and design
 - 🎨 Minimalist and professional aesthetic
 
 ## 📁 Tech Stack
