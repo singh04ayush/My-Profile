@@ -21,13 +21,10 @@ A clean, responsive personal portfolio website built using HTML and JavaScript. 
 - **Interactivity:** Vanilla JavaScript
 - **Deployment:** GitHub Pages or any static hosting provider
 
-## 📝 License
-
-MIT License
 
 ## 📝 Contact
 
-For any inquiries or feedback, please feel free to contact me at sayhi.ayush
+For any inquiries or feedback, please feel free to contact me at sayhi.ayush@gmail.com
 
 
 ## 📝 Crafted with ❤️ by Ayush Singh
