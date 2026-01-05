@@ -1,12 +1,7 @@
-# 📚 Learning Purpose Repository
-
-This repository was created as part of my learning journey. It showcases experiments with HTML, CSS, and JavaScript to build a clean, responsive personal portfolio website.
-
----
 
 # 💼 My Profile
 
-A clean, responsive personal portfolio website built using HTML and JavaScript. Designed to showcase your work, projects, and online presence with smooth UI interactions and essential features like dark mode and form submission.
+A clean, responsive personal portfolio website built using HTML and JavaScript. Designed to showcase my work, projects, and online presence with smooth UI interactions and essential features like dark mode and form submission.
 
 ## 🚀 Features
 
