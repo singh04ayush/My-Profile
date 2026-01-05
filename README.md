@@ -1,3 +1,9 @@
+# 📚 Learning Purpose Repository
+
+This repository was created as part of my learning journey. It showcases experiments with HTML, CSS, and JavaScript to build a clean, responsive personal portfolio website.
+
+---
+
 # 💼 My Profile
 
 A clean, responsive personal portfolio website built using HTML and JavaScript. Designed to showcase your work, projects, and online presence with smooth UI interactions and essential features like dark mode and form submission.
@@ -7,7 +13,6 @@ A clean, responsive personal portfolio website built using HTML and JavaScript. 
 - 🧭 Responsive navigation bar (optimized for large screens)
 - 🌙 Dark mode toggle for better UX
 - 📬 Contact form with submission functionality
-- 📸 Image assets for branding and design
 - 🎨 Minimalist and professional aesthetic
 
 ## 📁 Tech Stack
@@ -16,21 +21,10 @@ A clean, responsive personal portfolio website built using HTML and JavaScript. 
 - **Interactivity:** Vanilla JavaScript
 - **Deployment:** GitHub Pages or any static hosting provider
 
-## 🛠️ Setup & Usage
-
-```bash
-# Clone the repository
-git clone https://github.com/singh04ayush/My-Profile.git
-
-# Open index.html in your browser to view the site
-```
-
-## 📝 License
-
-MIT License
 
 ## 📝 Contact
 
-For any inquiries or feedback, please feel free to contact me at sayhi.ayush@gmail.com.
+For any inquiries or feedback, please feel free to contact me at sayhi.ayush@gmail.com
+
 
 ## 📝 Crafted with ❤️ by Ayush Singh
