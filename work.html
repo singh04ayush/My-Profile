@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Deepak | DevSecOps Engineer & Full Stack Developer Portfolio</title>
+    <meta name="description"
+        content="Explore Deepak's innovative software development and DevSecOps engineering projects. Featuring full-stack applications, secure systems, and DevSecOps solutions.">
+    <meta name="keywords"
+        content="DevSecOps engineer portfolio, software development projects, full stack development, secure systems, python projects, react applications">
+    <meta name="author" content="Deepak">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Deepak's DevSecOps & Software Development Projects Portfolio">
+    <meta property="og:description"
+        content="Innovative DevSecOps engineering and software development projects by Deepak">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/profile.jpg">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Deepak's DevSecOps & Software Development Projects">
+    <meta name="twitter:description" content="DevSecOps Engineering & Full Stack Development Projects Portfolio">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    gridTemplateColumns: {
+                        auto: 'repeat(auto-fit, minmax(200px,1fr))',
+                    },
+                    fontFamily: {
+                        Outfit: ['Outfit', 'sans-serif'],
+                        Ovo: ['Ovo', 'serif'],
+                    },
+                    animation: {
+                        spin_slow: 'spin 6s linear infinite',
+                    },
+                    colors: {
+                        lightHover: '#fcf4ff',
+                        darkHover: '#2a004a',
+                        darkTheme: '#11001F',
+                    },
+                    boxShadow: {
+                        black: '4px 4px 0 #000',
+                        white: '4px 4px 0 #fff',
+                    },
+                },
+            },
+            darkMode: 'selector',
+        };
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+
+<body class="overflow-x-hidden font-Outfit leading-8 dark:bg-darkTheme dark:text-white">
+
+    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
+        <img src="./images/header-bg-color.png" alt="" class="w-full">
+    </div>
+
+    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex justify-between z-50">
+        <div class="w-28 mr-14" aria-hidden="true"></div>
+        <ul
+            class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white-50 dark:bg-transparent">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/index.html#about">About Me</a></li>
+            <li><a href="/index.html#services">Services</a></li>
+            <li><a href="/work.html">My Work</a></li>
+            <li><a href="/index.html#contact">Contact Me</a></li>
+        </ul>
+        <div class="flex items-center gap-4">
+            <button onclick="toogleTheme()">
+                <img src="./images/moon_icon.png" alt="" class="w-6 dark:hidden">
+                <img src="./images/sun_icon.png" alt="" class="w-6 hidden dark:block">
+            </button>
+            <a href="/index.html#contact"
+                class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white-50">Contact
+                <img src="./images/arrow-icon.png" alt="" class="w-3 dark:hidden">
+                <img src="./images/arrow-icon-dark.png" alt="" class="w-3 hidden dark:block">
+            </a>
+            <button onclick="openMenu()" class="block md:hidden ml-3">
+                <img src="./images/menu-black.png" alt="" class="w-6 cursor-pointer dark:hidden">
+                <img src="./images/menu-white.png" alt="" class="w-6 hidden dark:block">
+            </button>
+        </div>
+
+        <ul id="sideMenu"
+            class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 font-Ovo dark:bg-darkHover dark:text-white">
+            <div class="absolute right-6 top-6" onclick="closeMenu()">
+                <img src="./images/close-black.png" alt="" class="w-5 cursor-pointer dark:hidden">
+                <img src="./images/close-white.png" alt="" class="w-5 cursor-pointer hidden dark:block">
+            </div>
+
+            <li><a href="/index.html" onclick="closeMenu()">Home</a></li>
+            <li><a href="/index.html#about" onclick="closeMenu()">About Me</a></li>
+            <li><a href="/index.html#services" onclick="closeMenu()">Services</a></li>
+            <li><a href="/work.html" onclick="closeMenu()">My Work</a></li>
+            <li><a href="/index.html#contact" onclick="closeMenu()">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <main class="pt-28">
+        <section class="w-full px-[12%] py-10 scroll-mt-20">
+            <div class="max-w-6xl mx-auto">
+                <h1 class="text-center text-5xl font-Ovo mb-12">My Work</h1>
+
+                <div class="flex flex-wrap justify-center gap-3" role="tablist">
+                    <button class="filter-btn active px-6 py-2 rounded-full border border-gray-400 bg-white bg-opacity-50 text-gray-800 font-Ovo hover:bg-lightHover duration-300 dark:bg-transparent dark:text-white dark:border-white/50"
+                        data-filter="all" role="tab" aria-selected="true" aria-controls="all-projects">All</button>
+                    <button class="filter-btn px-6 py-2 rounded-full border border-gray-400 bg-white bg-opacity-50 text-gray-800 font-Ovo hover:bg-lightHover duration-300 dark:bg-transparent dark:text-white dark:border-white/50"
+                        data-filter="web-dev-projects" role="tab" aria-selected="false" aria-controls="web-dev-projects">Web Dev</button>
+                    <!-- <button class="filter-btn" data-filter="ui-ux-projects" role="tab" aria-selected="false"
+                        aria-controls="ui-ux-projects">UI/UX</button> -->
+                    <button class="filter-btn px-6 py-2 rounded-full border border-gray-400 bg-white bg-opacity-50 text-gray-800 font-Ovo hover:bg-lightHover duration-300 dark:bg-transparent dark:text-white dark:border-white/50"
+                        data-filter="ai-ml-projects" role="tab" aria-selected="false" aria-controls="ai-ml-projects">AI/ML</button>
+                    <button class="filter-btn px-6 py-2 rounded-full border border-gray-400 bg-white bg-opacity-50 text-gray-800 font-Ovo hover:bg-lightHover duration-300 dark:bg-transparent dark:text-white dark:border-white/50"
+                        data-filter="full-stack-projects" role="tab" aria-selected="false" aria-controls="full-stack-projects">Full Stack</button>
+                    <button class="filter-btn px-6 py-2 rounded-full border border-gray-400 bg-white bg-opacity-50 text-gray-800 font-Ovo hover:bg-lightHover duration-300 dark:bg-transparent dark:text-white dark:border-white/50"
+                        data-filter="mern-projects" role="tab" aria-selected="false" aria-controls="mern-projects">MERN</button>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+                   
+
+                    <div class="project-card border border-gray-400 rounded-xl overflow-hidden bg-white bg-opacity-60 hover:bg-lightHover hover:-translate-y-1 duration-300 dark:bg-darkHover/30 dark:text-white dark:border-white/50"
+                        data-category="mern-projects">
+                        <div class="relative w-full h-52 overflow-hidden">
+                            <img src="assets/projects/e-commerce-website.png" alt="E-commerce Website" loading="lazy" class="w-full h-full object-cover">
+                            <a href="https://github.com/singh04ayush/e-commerce-Artisans"
+                                class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 hover:opacity-100 duration-300 text-white font-Ovo"
+                                aria-label="View E-commerce Website Project Details">View Project</a>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-lg font-semibold text-gray-800 dark:text-white">E-commerce Website</h3>
+                            <p class="text-sm text-gray-600 mt-2 dark:text-white/80">A MERN stack e-commerce project developed in three versions: Clothing Store, Game Store, and Local Artisans Marketplace.</p>
+                            <div class="flex flex-wrap gap-2 mt-4">
+                                <a href="https://github.com/singh04ayush/e-commerce" class="px-3 py-1 text-xs rounded-full border border-blue-200 bg-blue-50 text-blue-700 hover:bg-blue-100 hover:border-blue-300 duration-200 dark:bg-blue-500/10 dark:text-blue-300 dark:border-blue-400/30 dark:hover:bg-blue-500/20">Clothing</a>
+                                <a href="https://github.com/singh04ayush/game-Ecommerce" class="px-3 py-1 text-xs rounded-full border border-blue-200 bg-blue-50 text-blue-700 hover:bg-blue-100 hover:border-blue-300 duration-200 dark:bg-blue-500/10 dark:text-blue-300 dark:border-blue-400/30 dark:hover:bg-blue-500/20">Game</a>
+                                <a href="https://github.com/singh04ayush/e-commerce-Artisans" class="px-3 py-1 text-xs rounded-full border border-blue-200 bg-blue-50 text-blue-700 hover:bg-blue-100 hover:border-blue-300 duration-200 dark:bg-blue-500/10 dark:text-blue-300 dark:border-blue-400/30 dark:hover:bg-blue-500/20">Local Artisans</a>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mt-4">
+                                <span class="px-3 py-1 text-xs rounded-full bg-black/10 text-gray-700 dark:bg-white/10 dark:text-white">MongoDB</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-black/10 text-gray-700 dark:bg-white/10 dark:text-white">Express</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-black/10 text-gray-700 dark:bg-white/10 dark:text-white">React</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-black/10 text-gray-700 dark:bg-white/10 dark:text-white">Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card border border-gray-400 rounded-xl overflow-hidden bg-white bg-opacity-60 hover:bg-lightHover hover:-translate-y-1 duration-300 dark:bg-darkHover/30 dark:text-white dark:border-white/50"
+                        data-category="mern-projects">
+                        <div class="relative w-full h-52 overflow-hidden">
+                            <img src="assets/projects/imagify.png" alt="Imagify" loading="lazy" class="w-full h-full object-cover">
+                            <a href="https://github.com/phoenixdev100/Imagify"
+                                class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 hover:opacity-100 duration-300 text-white font-Ovo"
+                                aria-label="View Imagify Project Details">View Project</a>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Imagify</h3>
+                            <p class="text-sm text-gray-600 mt-2 dark:text-white/80">A web application that leverages modern technologies to offer fast, responsive, and secure image generation and transformations.</p>
+                            <div class="flex flex-wrap gap-2 mt-4">
+                                <span class="px-3 py-1 text-xs rounded-full bg-black/10 text-gray-700 dark:bg-white/10 dark:text-white">MERN Stack</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-black/10 text-gray-700 dark:bg-white/10 dark:text-white">Next.js</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card border border-gray-400 rounded-xl overflow-hidden bg-white bg-opacity-60 hover:bg-lightHover hover:-translate-y-1 duration-300 dark:bg-darkHover/30 dark:text-white dark:border-white/50"
+                        data-category="mern-projects">
+                        <div class="relative w-full h-52 overflow-hidden">
+                            <img src="assets/projects/TAP.png" alt="TAP" loading="lazy" class="w-full h-full object-cover">
+                            <a href="https://github.com/phoenixdev100/TAP"
+                                class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 hover:opacity-100 duration-300 text-white font-Ovo"
+                                aria-label="View TAP Project Details">View Project</a>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-lg font-semibold text-gray-800 dark:text-white">TAP</h3>
+                            <p class="text-sm text-gray-600 mt-2 dark:text-white/80">A comprehensive campus management application which provides an intuitive interface for managing schedules, assignments, and academic resources.</p>
+                            <div class="flex flex-wrap gap-2 mt-4">
+                                <span class="px-3 py-1 text-xs rounded-full bg-black/10 text-gray-700 dark:bg-white/10 dark:text-white">Typescript</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-black/10 text-gray-700 dark:bg-white/10 dark:text-white">Tailwind</span>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+
+                   
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div class="mt-10">
+        <div class="text-center">
+            <a href="mailto:sayhi.ayush@gmail.com" class="w-max flex items-center gap-2 mx-auto">
+                <img src="./images/mail_icon.png" alt="" class="w-6 dark:hidden">
+                <img src="./images/mail_icon_dark.png" alt="" class="w-6 hidden dark:block">
+                sayhi.ayush@gmail.com
+            </a>
+        </div>
+        <div class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-10 py-6">
+            <p>CopyRight @2026 Ayush Singh. All rights reserved</p>
+            <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
+                <li><a href="https://github.com/singh04ayush">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/ayush-singh-87b3682a5/">LinkedIn</a></li>
+                <li><a href="https://x.com/singh04ayush">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+
+            function setActiveButton(activeButton) {
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                    btn.classList.remove('bg-black', 'text-white', 'dark:bg-white', 'dark:text-black');
+                    btn.classList.add('bg-white', 'bg-opacity-50', 'text-gray-800', 'dark:bg-transparent', 'dark:text-white');
+                    btn.setAttribute('aria-selected', 'false');
+                });
+
+                activeButton.classList.add('active');
+                activeButton.classList.remove('bg-white', 'bg-opacity-50', 'text-gray-800', 'dark:bg-transparent', 'dark:text-white');
+                activeButton.classList.add('bg-black', 'text-white', 'dark:bg-white', 'dark:text-black');
+                activeButton.setAttribute('aria-selected', 'true');
+            }
+
+            function filterProjects(filter) {
+                projectCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    if (filter === 'all' || category === filter) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            }
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const filter = button.getAttribute('data-filter');
+                    setActiveButton(button);
+                    filterProjects(filter);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
