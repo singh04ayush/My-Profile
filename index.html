@@ -427,25 +427,41 @@
             concerns
             you may have. Whether you're looking for a new project, or just want to chat, or want to collaborate</p>
 
-        <form method="POST" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
-            <input type="hidden" name="access_key" value="0af9eab0-7727-4ae5-b8f8-6146ee1f493a">
+        <form id="contactForm" class="max-w-2xl mx-auto">
             <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
-                <input type="text" placeholder="Enter Your Name"
+                <input type="text" placeholder="Enter Your Name" id="contactName"
                     class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90"
                     required name="name">
-                <input type="text" placeholder="Enter Your Email"
+                <input type="email" placeholder="Enter Your Email" id="contactEmail"
                     class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90"
                     required name="email">
             </div>
-            <textarea rows="3" placeholder="Enter Your Message"
+            <textarea rows="3" placeholder="Enter Your Message" id="contactMessage"
                 class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white  mb-6 dark:bg-darkHover/30 dark:border-white/90"
                 required name="message"></textarea>
-            <button
-                class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover">Submit
-                Now
+            <button type="button" onclick="openEmailClient()"
+                class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover">Mail Me
                 <img src="./images/right-arrow-white.png" alt="" class="w-4">
             </button>
         </form>
+
+        <script>
+            function openEmailClient() {
+                const name = document.getElementById('contactName').value;
+                const email = document.getElementById('contactEmail').value;
+                const message = document.getElementById('contactMessage').value;
+
+                if (!name || !email || !message) {
+                    alert('Please fill in all fields');
+                    return;
+                }
+
+                const subject = encodeURIComponent(`Contact from ${name}`);
+                const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+
+                window.location.href = `mailto:support@ayushsingh.me?subject=${subject}&body=${body}`;
+            }
+        </script>
 
     </div>
 
