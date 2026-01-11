@@ -95,13 +95,15 @@
     </nav>
 
     <!-- Hero Section -->
-    <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
-        <img src="./images/profile-img.png" alt="" class="rounded-full w-32">
-        <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo">Hi! I'm Ayush Singh
-            <img src="./images/hand-icon.png" alt="" class="w-6">
+    <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 px-4">
+        <img src="./images/profile-img.png" alt="" class="rounded-full w-24 sm:w-32">
+        <h3 class="flex items-end gap-2 text-lg sm:text-xl md:text-2xl mb-3 font-Ovo">Hi! I'm Ayush Singh
+            <img src="./images/hand-icon.png" alt="" class="w-5 sm:w-6">
         </h3>
-        <h1 class="text-3xl sm:text-6xl lg:text-[66px]">System Engineer and Backend Developer based in India</h1>
-        <p class="max-w-2xl mx-auto">As a Systems Engineer and Backend Developer, I combines strong software development
+        <h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-[66px] px-2">System Engineer and Backend Developer based in
+            India</h1>
+        <p class="max-w-2xl mx-auto px-4 text-sm sm:text-base">As a Systems Engineer and Backend Developer, I combines
+            strong software development
             skills with a keen interest in DevOps practices, building solutions that are both resilient and scalable.
         </p>
         <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
@@ -120,133 +122,139 @@
 
 
     <!-- About Section -->
-    <div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
-        <h4 class="text-center mb-2 text-lg font-Ovo">Introduction</h4>
-        <h2 class="text-center text-5xl font-Ovo">About Me</h2>
+    <div id="about" class="w-full px-[5%] sm:px-[8%] lg:px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-base sm:text-lg font-Ovo">Introduction</h4>
+        <h2 class="text-center text-3xl sm:text-4xl lg:text-5xl font-Ovo">About Me</h2>
 
-        <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
-            <div class="max-w-max mx-auto relative">
-                <img src="./images/user-image.png" alt="" class="w-64 sm:w-80 rounded-3xl max-w-none">
+        <div class="flex w-full flex-col lg:flex-row items-center gap-10 lg:gap-20 my-10 lg:my-20">
+            <div class="max-w-max mx-auto relative flex-shrink-0">
+                <img src="./images/user-image.png" alt="" class="w-48 sm:w-64 lg:w-80 rounded-3xl">
             </div>
 
-            <div class="flex-1">
-                <p class="mb-10 max-w-2xl font-Ovo">I engineer systems that don’t just run, they sprint, dance, and
+            <div class="flex-1 w-full">
+                <p class="mb-6 sm:mb-10 max-w-2xl font-Ovo text-sm sm:text-base break-words">I engineer systems that
+                    don't just run, they sprint, dance, and
                     occasionally moonwalk into production. Along the way, I build communities that laugh, learn, and
                     ship together.</p>
-                <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
+                <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-2xl">
                     <li
-                        class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
-                        <img src="./images/code-icon.png" alt="" class="w-7 mt-3 dark:hidden">
-                        <img src="./images/code-icon-dark.png" alt="" class="w-7 mt-3 dark:block hidden">
-                        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Languages</h3>
-                        <p class="text-gray-600 text-sm dark:text-white">Go, Linux, Java, MySQL, PostgreSQL, JavaScript,
+                        class="border-[0.5px] border-gray-400 rounded-xl p-4 sm:p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+                        <img src="./images/code-icon.png" alt="" class="w-6 sm:w-7 mt-2 sm:mt-3 dark:hidden">
+                        <img src="./images/code-icon-dark.png" alt="" class="w-6 sm:w-7 mt-2 sm:mt-3 dark:block hidden">
+                        <h3 class="my-3 sm:my-4 font-semibold text-gray-700 dark:text-white text-sm sm:text-base">
+                            Languages</h3>
+                        <p class="text-gray-600 text-xs sm:text-sm dark:text-white break-words">Go, Linux, Java, MySQL,
+                            PostgreSQL, JavaScript,
                             MERN</p>
                     </li>
                     <li
-                        class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
-                        <img src="./images/edu-icon.png" alt="" class="w-7 mt-3 dark:hidden">
-                        <img src="./images/edu-icon-dark.png" alt="" class="w-7 mt-3 dark:block hidden">
-                        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Sharda University 2023-27 | CGPA
+                        class="border-[0.5px] border-gray-400 rounded-xl p-4 sm:p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+                        <img src="./images/edu-icon.png" alt="" class="w-6 sm:w-7 mt-2 sm:mt-3 dark:hidden">
+                        <img src="./images/edu-icon-dark.png" alt="" class="w-6 sm:w-7 mt-2 sm:mt-3 dark:block hidden">
+                        <h3
+                            class="my-3 sm:my-4 font-semibold text-gray-700 dark:text-white text-sm sm:text-base break-words">
+                            Sharda University 2023-27 | CGPA
                             9.0</h3>
-                        <p class="text-gray-600 text-sm dark:text-white">B.Tech in Computer Science and Engineering</p>
+                        <p class="text-gray-600 text-xs sm:text-sm dark:text-white break-words">B.Tech in Computer
+                            Science and Engineering</p>
                     </li>
                     <li
-                        class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
-                        <img src="./images/project-icon.png" alt="" class="w-7 mt-3 dark:hidden">
-                        <img src="./images/project-icon-dark.png" alt="" class="w-7 mt-3 dark:block hidden">
-                        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Platforms & Tools</h3>
-                        <p class="text-gray-600 text-sm dark:text-white">AWS | Docker | Postman | Git | Github & Actions
+                        class="border-[0.5px] border-gray-400 rounded-xl p-4 sm:p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+                        <img src="./images/project-icon.png" alt="" class="w-6 sm:w-7 mt-2 sm:mt-3 dark:hidden">
+                        <img src="./images/project-icon-dark.png" alt=""
+                            class="w-6 sm:w-7 mt-2 sm:mt-3 dark:block hidden">
+                        <h3 class="my-3 sm:my-4 font-semibold text-gray-700 dark:text-white text-sm sm:text-base">
+                            Platforms & Tools</h3>
+                        <p class="text-gray-600 text-xs sm:text-sm dark:text-white break-words">AWS | Docker | Postman |
+                            Git | Github & Actions
                             | Neondb </p>
                     </li>
                 </ul>
 
-                <ul class=" mt-5 flex items-center gap-3 sm:gap-5">
+                <ul class="mt-4 sm:mt-5 flex flex-wrap items-center gap-2 sm:gap-3 md:gap-5">
 
                     <li
-                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img src="./images/mongodb.png" alt="" class="w-5 sm:w-7">
+                        class="flex items-center justify-center w-10 sm:w-12 md:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="./images/mongodb.png" alt="" class="w-4 sm:w-5 md:w-7">
                     </li>
                     <li
-                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img src="./images/express.webp" alt="" class="w-12 sm:w-15">
-                    </li>
-
-                    <li
-                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img src="./images/react.png" alt="" class="w-10 sm:w-15">
+                        class="flex items-center justify-center w-10 sm:w-12 md:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="./images/express.webp" alt="" class="w-10 sm:w-12 md:w-15 dark:invert">
                     </li>
 
                     <li
-                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img src="./images/nodejs.png" alt="" class="w-15 sm:w-17">
+                        class="flex items-center justify-center w-10 sm:w-12 md:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="./images/react.png" alt="" class="w-8 sm:w-10 md:w-15">
                     </li>
 
                     <li
-                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img src="./images/javascript.png" alt="" class="w-15 sm:w-17">
+                        class="flex items-center justify-center w-10 sm:w-12 md:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="./images/nodejs.png" alt="" class="w-12 sm:w-15 md:w-17">
                     </li>
 
                     <li
-                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img src="./images/linux.png" alt="" class="w-5 sm:w-7">
+                        class="flex items-center justify-center w-10 sm:w-12 md:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="./images/javascript.png" alt="" class="w-12 sm:w-15 md:w-17">
                     </li>
 
                     <li
-                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img src="./images/java.png" alt="" class="w-15 sm:w-17">
+                        class="flex items-center justify-center w-10 sm:w-12 md:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="./images/linux.png" alt="" class="w-4 sm:w-5 md:w-7">
                     </li>
 
                     <li
-                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img src="./images/go.png" alt="" class="w-5 sm:w-7">
+                        class="flex items-center justify-center w-10 sm:w-12 md:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="./images/java.png" alt="" class="w-12 sm:w-15 md:w-17">
                     </li>
 
                     <li
-                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img src="./images/mysql.png" alt="" class="w-5 sm:w-7">
+                        class="flex items-center justify-center w-10 sm:w-12 md:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="./images/go.png" alt="" class="w-4 sm:w-5 md:w-7 dark:invert">
                     </li>
 
                     <li
-                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img src="./images/postgre.png" alt="" class="w-25 sm:w-27">
-                    </li>
-                </ul>
-
-
-                <ul class=" mt-5 flex items-center gap-3 sm:gap-5">
-                    <li
-                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img src="./images/aws.png" alt="" class="w-15 sm:w-17">
+                        class="flex items-center justify-center w-10 sm:w-12 md:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="./images/mysql.png" alt="" class="w-4 sm:w-5 md:w-7">
                     </li>
 
                     <li
-                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img src="./images/docker.png" alt="" class="w-5 sm:w-7">
+                        class="flex items-center justify-center w-10 sm:w-12 md:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="./images/postgre.png" alt="" class="w-20 sm:w-25 md:w-27 dark:invert">
                     </li>
 
                     <li
-                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img src="./images/postman.png" alt="" class="w-15 sm:w-17">
+                        class="flex items-center justify-center w-10 sm:w-12 md:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="./images/aws.png" alt="" class="w-12 sm:w-15 md:w-17">
                     </li>
 
                     <li
-                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img src="./images/git.png" alt="" class="w-5 sm:w-7">
+                        class="flex items-center justify-center w-10 sm:w-12 md:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="./images/docker.png" alt="" class="w-4 sm:w-5 md:w-7">
                     </li>
 
                     <li
-                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img src="./images/github.png" alt="" class="w-5 sm:w-7">
+                        class="flex items-center justify-center w-10 sm:w-12 md:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="./images/postman.png" alt="" class="w-12 sm:w-15 md:w-17">
                     </li>
 
                     <li
-                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img src="./images/actions.png" alt="" class="w-5 sm:w-7">
+                        class="flex items-center justify-center w-10 sm:w-12 md:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="./images/git.png" alt="" class="w-4 sm:w-5 md:w-7">
                     </li>
 
                     <li
-                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img src="./images/neondb.webp" alt="" class="w-5 sm:w-7">
+                        class="flex items-center justify-center w-10 sm:w-12 md:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="./images/github.png" alt="" class="w-4 sm:w-5 md:w-7 dark:invert">
+                    </li>
+
+                    <li
+                        class="flex items-center justify-center w-10 sm:w-12 md:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="./images/actions.png" alt="" class="w-4 sm:w-5 md:w-7">
+                    </li>
+
+                    <li
+                        class="flex items-center justify-center w-10 sm:w-12 md:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="./images/neondb.webp" alt="" class="w-4 sm:w-5 md:w-7 dark:invert">
                     </li>
                 </ul>
 
@@ -258,18 +266,20 @@
 
 
     <!--Services Section-->
-    <div id="services" class="w-full px-[12%] py-10 scroll-mt-20">
-        <h4 class="text-center mb-2 text-lg font-Ovo">What i learned</h4>
-        <h2 class="text-center text-5xl font-Ovo">My Achievements</h2>
-        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">Along the way, I’ve earned industry-recognized
+    <div id="services" class="w-full px-[5%] sm:px-[8%] lg:px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-base sm:text-lg font-Ovo">What i learned</h4>
+        <h2 class="text-center text-3xl sm:text-4xl lg:text-5xl font-Ovo">My Achievements</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo text-sm sm:text-base px-4">Along the way, I've
+            earned industry-recognized
             learning that validates my expertise and commitment to continuous learning</p>
 
-        <div class="grid grid-cols-auto gap-4 my-10">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-auto gap-4 my-10">
 
             <a href="./IBM.html"
                 class="block border border-gray-400 rounded-lg px-6 py-6 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white">
                 <div class="h-32 flex items-center justify-center mb-4">
-                    <img src="./images/ibm.webp" alt="IBM SkillsBuild" class="max-w-full max-h-full object-contain">
+                    <img src="./images/ibm.webp" alt="IBM SkillsBuild"
+                        class="max-w-full max-h-full object-contain dark:invert">
                 </div>
                 <div class="flex items-center gap-2 text-sm">View
                     <img src="./images/right-arrow.png" alt="" class="w-4">
@@ -409,32 +419,49 @@
 
     <!--Contact-->
     <div id="contact"
-        class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('./images/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center dark:bg-none">
-        <h4 class="text-center mb-2 text-lg font-Ovo">Connect with Me</h4>
-        <h2 class="text-center text-5xl font-Ovo">Get in Touch</h2>
-        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">I'm here to guide you with any questions or
+        class="w-full px-[5%] sm:px-[8%] lg:px-[12%] py-10 scroll-mt-20 bg-[url('./images/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center dark:bg-none">
+        <h4 class="text-center mb-2 text-base sm:text-lg font-Ovo">Connect with Me</h4>
+        <h2 class="text-center text-3xl sm:text-4xl lg:text-5xl font-Ovo">Get in Touch</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo text-sm sm:text-base px-4">I'm here to guide you
+            with any questions or
             concerns
             you may have. Whether you're looking for a new project, or just want to chat, or want to collaborate</p>
 
-        <form method="POST" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
-            <input type="hidden" name="access_key" value="0af9eab0-7727-4ae5-b8f8-6146ee1f493a">
+        <form id="contactForm" class="max-w-2xl mx-auto">
             <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
-                <input type="text" placeholder="Enter Your Name"
+                <input type="text" placeholder="Enter Your Name" id="contactName"
                     class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90"
                     required name="name">
-                <input type="text" placeholder="Enter Your Email"
+                <input type="email" placeholder="Enter Your Email" id="contactEmail"
                     class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90"
                     required name="email">
             </div>
-            <textarea rows="3" placeholder="Enter Your Message"
+            <textarea rows="3" placeholder="Enter Your Message" id="contactMessage"
                 class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white  mb-6 dark:bg-darkHover/30 dark:border-white/90"
                 required name="message"></textarea>
-            <button
-                class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover">Submit
-                Now
+            <button type="button" onclick="openEmailClient()"
+                class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover">Mail Me
                 <img src="./images/right-arrow-white.png" alt="" class="w-4">
             </button>
         </form>
+
+        <script>
+            function openEmailClient() {
+                const name = document.getElementById('contactName').value;
+                const email = document.getElementById('contactEmail').value;
+                const message = document.getElementById('contactMessage').value;
+
+                if (!name || !email || !message) {
+                    alert('Please fill in all fields');
+                    return;
+                }
+
+                const subject = encodeURIComponent(`Contact from ${name}`);
+                const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+
+                window.location.href = `mailto:support@ayushsingh.me?subject=${subject}&body=${body}`;
+            }
+        </script>
 
     </div>
 
